@@ -1,0 +1,39 @@
+syntax = "proto3";
+
+package inference;
+
+// The inference api service definition.
+service InferenceAPI {
+
+  // Get classification
+  rpc GetClassification (ImageRequest) returns (ImageClassification) {}
+
+  // Get fashion matching embedding for fashion-MNIST
+  rpc GetFashionMatchingMNIST (ImageRequest) returns (FashionMatchingMNIST) {}
+
+  // Get Segmentation
+  rpc GetSegmentation (ImageRequest) returns (ImageResponse) {}
+
+}
+
+// Image Input
+message ImageRequest {
+  bytes image = 1;
+}
+
+// Classification response
+message ImageClassification {
+  string taxonomy = 1;
+}
+
+// Fashion Matching response
+message FashionMatchingMNIST {
+
+  string taxonomy = 1;
+  repeated int32 reco = 2;
+}
+
+// Segmentation response
+message ImageResponse {
+  bytes res_map = 1;
+}
