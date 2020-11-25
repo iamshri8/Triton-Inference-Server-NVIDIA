@@ -18,7 +18,7 @@ Please find the [official docs](https://docs.nvidia.com/deeplearning/sdk/triton-
 
 ## How to run the project? ##
 
-- git clone https://github.com/Rathna21/tensorrt-inference-server.git
+- git clone https://github.com/iamshri8/Triton-Inference-Server-NVIDIA.git
 - Install grpcio-tools and run the command to generate client and server stubs using protocol buffer compiler:
   - pip install grpcio-tools
   - python -m grpc_tools.protoc -I./protos --python_out=./client_server/inf_ser/stubs/ --grpc_python_out=./client_server/inf_ser/stubs/ ./protos/inference.proto
