@@ -1,6 +1,7 @@
-# TensorRT Inference Server using gRPC client server architecture #
+# Triton Inference Server by NVIDIA using gRPC client server architecture #
 
-The project is about building an inference server for deep learning model inference using NVIDIA Triton Inference sever(formerly known as TensorRT Inference Server). NVIDIA Triton Inference Server provides cloud inferencing solution optimized for NVIDIA GPUs.The server provides an inference service via an HTTP or GRPC endpoint, allowing remote clients to request inferencing for any model being managed by the server. For edge deployments, Triton Server is also available as a shared library with an API that allows the full functionality of the server to be included directly in an application.[official docs](https://docs.nvidia.com/deeplearning/sdk/triton-inference-server-guide/docs/index.html)
+The project is about building an inference server for trained ML model inference using NVIDIA Triton Inference server. This framework provides cloud inferencing solution optimized for NVIDIA GPUs.The server provides an inference service via an HTTP or GRPC endpoint, allowing remote clients to request inferencing for any model being managed by the server. For edge deployments, Triton Server is also available as a shared library with an API that allows the full functionality of the server to be included directly in an application. 
+Please find the [official docs](https://docs.nvidia.com/deeplearning/sdk/triton-inference-server-guide/docs/index.html)
 
 ## Features of NVIDIA Triton Inference Server: ##
 
